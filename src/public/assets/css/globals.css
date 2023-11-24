@@ -19,6 +19,7 @@
 html {
   font-family: "Lato", sans-serif;
   color: var(--text-primary);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,7 @@ input,
 select,
 textarea {
   padding: 0.8rem 1.2rem;
+  font-family: inherit;
 }
 
 .text-primary {
