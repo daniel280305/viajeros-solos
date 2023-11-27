@@ -54,6 +54,9 @@ export async function businessDetails(req, res) {
         res.json({
           name: business.name,
           description: business.description,
+          address: business.address,
+          price: business.price,
+          rating: calculateRatingAverage(business.reviews),
           // agregar campos adicionales
         });
       });
@@ -70,9 +73,9 @@ export async function createNewBusiness(req, res) {
     const business = new Business({
       _id: new mongoose.Types.ObjectId(),
       name,
-      ownerId: userId,
+      owner: userId,
       address,
-      categoriesIds,
+      categories: categoriesIds,
       description,
       images,
       isApproved: false,
@@ -87,3 +90,4 @@ export async function createNewBusiness(req, res) {
     res.status(500).json({ error: "Error al crear un nuevo negocio" });
   }
 }
+//reviews agregar objeto
