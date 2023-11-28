@@ -3,6 +3,19 @@ h1 {
   padding-top: 20px;
 }
 
+.img-header {
+  background: url(src/public/assets/images/leopardo.jpg);
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  background-size: cover;
+  background-position: top;
+  height: 400px;
+  padding-left: 100px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 main {
   padding: 20px;
 }
