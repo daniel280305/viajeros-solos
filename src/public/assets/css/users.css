@@ -32,6 +32,7 @@ body {
 
 .table-container {
   overflow: scroll;
+  margin-bottom: 70px;
 }
 
 .wrapper {
@@ -130,15 +131,17 @@ th {
 }
 @media (max-width: 767px) {
   .user {
-    width: 15%;
-    padding-left: 10px;
+    display:none;
+
   }
   .search {
     padding-right: 0;
   }
+  .user{
+    justify-content: center;
+  }
 }
 
-/* SCROLL STYLES */
 html {
   scrollbar-width: thin;
   scrollbar-color: #aad576 #f1f1f1;

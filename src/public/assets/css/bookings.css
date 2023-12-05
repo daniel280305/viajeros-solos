@@ -13,16 +13,26 @@
   color: white;
 }
 
-.padding {
+.padding-title {
   padding-left: 60px;
   padding-top: 12px;
   font-size: 35px;
+}
+
+.padding {
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h3 {
   text-align: center;
   font-size: 30px;
   padding-top: 10px;
+}
+
+h1 {
+  font-size: 20px;
 }
 
 a {
@@ -50,18 +60,23 @@ a {
   border-radius: 20px;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0 15px 30px black, 0 10px 10px black;
+  box-shadow: 0 3px 6px black, 0 3px 6px black;
   transition: 0.4s;
   background: white;
 }
 
 .content p {
   color: black;
+  font-size: 16px;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .content:hover {
-  box-shadow: 0 3px 6px black, 0 3px 6px black;
   transform: translate(0px, -20px);
+  box-shadow: 0 3px 6px black, 0 3px 6px black;
 }
 
 .reservation-thumbnail {
@@ -98,20 +113,34 @@ li {
     border-radius: 20px;
     cursor: pointer;
     padding-top: 10px;
-    box-shadow: 0 15px 30px black, 0 10px 10px black;
+
     transition: 0.4s;
     background: white;
   }
 
-  .padding {
-    position: absolute;
-    right: 0;
-    padding-right: 60px;
-    font-size: 25px;
+  .gallery {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .padding-title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    padding-right: 30px;
   }
 }
 
-/* SCROLL STYLES */
 html {
   scrollbar-width: thin;
   scrollbar-color: #aad576 #f1f1f1;
@@ -128,9 +157,4 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background-color: #ffffff;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #aad576 #f1f1f1;
 }

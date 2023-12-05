@@ -7,11 +7,19 @@
   height: 400px;
   padding-left: 30px;
   padding-top: 40px;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+.center {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 main {
   max-width: 800px;
   margin: 100px auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -39,18 +47,29 @@ th {
   background-color: #73a942;
   color: #fff;
 }
+
 @media (max-width: 767px) {
   .img-header {
     font-size: 13px;
-    padding-top: 75px;
+    padding-top: 90px;
+    column-gap: 30px;
   }
+
   select {
     padding: 5px;
     font-size: 16px;
   }
+
+  main {
+    max-width: 500px;
+  }
+
+  select {
+    display: flex;
+    column-gap: 30px;
+  }
 }
 
-/* SCROLL STYLES */
 html {
   scrollbar-width: thin;
   scrollbar-color: #aad576 #f1f1f1;
@@ -67,9 +86,4 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background-color: #ffffff;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #aad576 #f1f1f1;
 }
