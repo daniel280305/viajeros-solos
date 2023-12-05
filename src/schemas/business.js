@@ -5,7 +5,7 @@ var businessSchema = mongoose.Schema({
   name: String,
   owner: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   address: String,
-  categories: [{ type: mongoose.Schema.Types.ObjectId, ref: "Category" }],
+  category: { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
   description: String,
   images: [String],
   isApproved: Boolean,
@@ -13,7 +13,7 @@ var businessSchema = mongoose.Schema({
   phoneNumber: Number,
   price: Number,
 
-  reservations: [mongoose.Schema.Types.ObjectId],
+  reservations: { type: [mongoose.Schema.Types.ObjectId], ref: "Reservation" },
 
   reviews: [
     {

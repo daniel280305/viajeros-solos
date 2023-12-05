@@ -2,14 +2,11 @@ import mongoose from "mongoose";
 
 var reservationSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  userId: mongoose.Schema.Types.ObjectId,
-  businessId: mongoose.Schema.Types.ObjectId,
-  dailyPrice: Number,
-  totalPrice: Number,
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  businessId: { type: mongoose.Schema.Types.ObjectId, ref: "Business" },
+  totalPaid: Number,
   paymentMethodId: mongoose.Schema.Types.ObjectId,
-  numberOfPeople: Number,
-  numberOfDays: Number,
-  days: [Date],
+  day: Date,
 });
 
 export default mongoose.model("Reservation", reservationSchema, "reservations");

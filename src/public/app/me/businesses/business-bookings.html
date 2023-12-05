@@ -1,77 +1,35 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservaciones | Viajeros Solos</title>
     <link rel="stylesheet" href="/assets/css/globals.css" />
     <link rel="stylesheet" href="/assets/css/business-bookings.css" />
+    <script src="/assets/js/business-reservation.js" defer></script>
     <script src="/components/header.js"></script>
     <script src="/components/footer.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <viajeros-solos-header></viajeros-solos-header>
     <div class="img-header">
-        <h1>Reservaciones de mis negocios</h1>
+      <h1>Reservaciones de mis negocios</h1>
     </div>
     <main>
+      <div class="center">
         <label for="select">Seleccionar Negocio:</label>
         <select id="select">
-            <option value="1">Hotel Bella Vista</option>
-            <option value="2">Tour Monteverde</option>
-            <option value="3">Almuerzo en el Poás</option>
+          <option selected hidden>Seleccione un negocio</option>
         </select>
-        <label for="filter">Filtrar Reservas:</label>
-        <select id="filter">
-            <option value="all">Todas</option>
-            <option value="coming">Futuras</option>
-            <option value="past">Viejas</option>
-        </select>
+      </div>
 
-        <table>
-            <tr>
-                <th>Fecha de reserva</th>
-                <th>Cliente</th>
-                <th>Días de reserva</th>
-            </tr>
-            <tr>
-                <td>23-11-2023</td>
-                <td>Sofía Herrera</td>
-                <td>
-                    <p>Fecha de entrada: 24-11-23 </p>
-                    <p>Fecha de salida: 28-11-23</p>
-                </td>
-            </tr>
-            <tr>
-                <td>03-12-2023</td>
-                <td>Marcela Aguilar</td>
-                <td>
-                    <p>Fecha de entrada: 05-12-2023 </p>
-                    <p>Fecha de salida: 11-12-2023</p>
-                </td>
-            </tr>
-            <tr>
-                <td>05-11-2023</td>
-                <td>Carlos Sauma</td>
-                <td>
-                    <p>Fecha de entrada: 05-12-2023 </p>
-                    <p>Fecha de salida: 16-12-2023</p>
-                </td>
-            </tr>
-            <tr>
-                <td>28-11-2023</td>
-                <td>Manuel Chaverri</td>
-                <td>
-                    <p>Fecha de entrada: 05-12-2023 </p>
-                    <p>Fecha de salida: 07-16-2023</p>
-                </td>
-            </tr>
-        </table>
+      <table id="business-bookings">
+        <tr>
+          <th>Cliente</th>
+          <th>Días de reserva</th>
+        </tr>
+      </table>
     </main>
     <viajeros-solos-footer></viajeros-solos-footer>
-</body>
-
-</html>
-
+  </body>
 </html>

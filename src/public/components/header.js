@@ -39,12 +39,12 @@ class ViajerosSolosHeader extends HTMLElement {
         },
         {
           name: "Mi cuenta",
-          url: "/app/me",
+          url: "/app/me/profile",
           button: false,
         },
         {
           name: "Cerrar sesión",
-          url: "/",
+          url: "/app/logout",
           button: true,
         },
       ];

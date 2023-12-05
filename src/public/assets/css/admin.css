@@ -91,6 +91,7 @@ nav > ul > li a:hover {
 
 .users {
   background-color: #ccebb3;
+  height: 50%;
   justify-content: center;
 }
 
@@ -174,7 +175,6 @@ nav > ul > li a:hover {
   }
 }
 
-/* SCROLL STYLES */
 html {
   scrollbar-width: thin;
   scrollbar-color: #aad576 #f1f1f1;
@@ -191,9 +191,4 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background-color: #ffffff;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #aad576 #f1f1f1;
 }

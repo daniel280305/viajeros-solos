@@ -20,6 +20,7 @@ body {
 
 .table-container {
   overflow: scroll;
+  margin-bottom: 70px;
 }
 
 .menu a {
@@ -92,7 +93,7 @@ table {
 }
 
 .user {
-  width: 2%;
+  width: 4%;
   padding-left: 10px;
   vertical-align: middle;
 }
@@ -138,9 +139,11 @@ th {
   .search {
     padding-right: 0;
   }
+  .user{
+    display:none;
+  }
 }
 
-/* SCROLL STYLES */
 html {
   scrollbar-width: thin;
   scrollbar-color: #aad576 #f1f1f1;
@@ -157,9 +160,4 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background-color: #ffffff;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #aad576 #f1f1f1;
 }
